@@ -23,5 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('game/', views.gamepro),
     path('search/', views.search),
-    path('img/<int:myid>', views.imageview,name='productview')
+    path('img/<int:myid>', views.imageview,name='productview'),
+    path('all', views.allimageview),
+    path('user', views.userview),
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
